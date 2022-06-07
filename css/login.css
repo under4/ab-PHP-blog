@@ -1,0 +1,51 @@
+#loginContainer{
+    height: 100%;
+}
+
+#loginContainer #main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 100px);
+    width: 100vw;
+}
+
+#loginContainer #main div{
+    display: flex;
+}
+
+#loginContainer #main div p{
+    margin: 0 5px;
+}
+
+#loginContainer #main div a{
+    font-weight: 700;
+}
+
+#loginContainer #main form{
+    display: flex;
+    flex-direction: column;
+}
+
+#loginContainer #main form input{
+    font-size: 1.2rem;
+    margin: 3px 0;
+    padding: 3px;
+}
+
+#loginContainer #main form select{
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+#loginContainer #main form input[type="submit"]{
+    font-size: 1rem;
+    border: 3px solid black;
+    width: 15ch;
+    padding: 5px;
+    margin: 5px 0;
+    align-self: center;
+    border-radius: 4px;
+    cursor: pointer;
+}

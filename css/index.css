@@ -1,0 +1,88 @@
+#latestPost{
+    position: relative;
+    height: calc(100vh - 76px);
+    cursor: pointer;
+}
+
+#latestPost img{
+    position: absolute;
+    height: inherit;
+    width: calc(70vw);
+    top: 0;
+    z-index: -99;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+    border-radius: 4px;
+}
+
+#latestPost #latestDateInfo{
+    justify-content: space-between;
+}
+
+#latestPost #latestDateInfo div > p{
+    margin-left: 5px;
+    opacity: .8;
+    font-size: .8rem;
+}
+
+#latestPost #latestInfo{
+    position: absolute;
+    bottom: 20%;
+    padding: 20px;
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+    border-left: none;
+    border-radius: 0px 8px 8px 0px;
+}
+
+#latestPost #latestInfo h4{
+    opacity: .8;
+}
+
+#latestPost #latestInfo #latestInfoName{
+    display: flex;
+    align-items: center;
+}
+
+#latestPost #latestInfo #latestInfoName p{
+    margin-left: 15px;
+    opacity: .8;
+}
+
+#latestPost #latestInfo p{
+    max-width: 45ch;
+}
+
+#latestPost .description{
+    margin-bottom: 12px;
+}
+
+#main section{
+    margin-bottom: 25px;
+}
+
+#main .post{
+    display: flex;
+    border: 1px solid rgba(0, 0, 0, 0.363);
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#main .post img{
+    height: 250px;
+    max-width: 300px;
+}
+
+#main .post .postInfo{
+    padding: 15px;
+    padding-left: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#main .post .postUpper{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 12px;
+}

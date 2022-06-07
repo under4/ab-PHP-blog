@@ -1,0 +1,25 @@
+#post .postUpper{
+    display: flex;
+    align-items: center;
+}
+
+#post .postUpper p{
+    margin-left: 30px;
+}
+
+#post #postHero{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+#post #newComment{
+    padding: 15px 0;
+}
+
+#post textarea{
+    resize: none;
+    font-size: 1rem;
+    padding: 5px;
+    width: 100%;
+}

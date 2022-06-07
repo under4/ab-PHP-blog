@@ -15,20 +15,24 @@ require_once("db.php");
     
 
     <body>
-        <div>
-            <div id="logo">
-                The BLOG
+        <section id="header">
+            <div>
+                <a href="index.php">
+                    <h1 id="logo">Blog Overflow</h1>
+                </a>
+                
+                <div id="links">
+                    <a href="index.php">Home</a>
+                    <a href="posts.php">Posts</a>
+                    <a href="categories.php">Categories</a>
+                    <a href="about.php">About</a>
+                </div>
             </div>
-            <div id="links">
-                <a href="#">Pholder</a>
-                <a href="#">Pholder</a>
-                <a href="#">Pholder</a>
-                <a href="#">Pholder</a>
+            <div id="login">
+                <a href="login.php">Login</a>
+                <a href="signUp.php"><button>Sign Up</button></a>
             </div>
-        </div>
-        <div id="login">
-            <a href="#">Login</a>
-            <a href="#">Sign Up</a>
-        </div>
+        </section>
+        
     </body>
 </html>
