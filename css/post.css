@@ -17,9 +17,43 @@
     padding: 15px 0;
 }
 
+#post #newComment input[type="submit"]{
+    padding: 5px;
+    border: 1px solid black;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
 #post textarea{
     resize: none;
     font-size: 1rem;
     padding: 5px;
     width: 100%;
+}
+
+#post .comment .commentUpper{
+    display: flex;
+    align-items: center;
+}
+
+#post .comment .commentUpper p:first-of-type{
+    font-size: 1.1rem;
+    margin-right: 15px;
+}
+
+#post .comment .commentUpper p:last-of-type{
+    opacity: .9;
+    font-size: .7rem;
+}
+
+#post .comment > p{
+    margin: 5px 0;
+    font-size: 1rem;
+}
+
+#post .comment .commentButtons span{
+    margin-right: 5px;
+    cursor: pointer;
+    font-size: .7rem;
+    opacity: .8;
 }
