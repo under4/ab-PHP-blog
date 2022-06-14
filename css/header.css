@@ -34,3 +34,7 @@
     border-radius: 3px;
     cursor: pointer;
 }
+
+#header #login{
+    display: flex;
+}

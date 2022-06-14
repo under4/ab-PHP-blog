@@ -1,4 +1,4 @@
-<?php 
+<?php
 require_once("header.php")
 ?>
 <!DOCTYPE html>
@@ -10,6 +10,7 @@ require_once("header.php")
         <script src="https://kit.fontawesome.com/19a4fd8ab0.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/root.css">
         <link rel="stylesheet" href="css/index.css">
+        <title>Blog Overflow</title>
     </head>
     <body>
         <div class="flex">

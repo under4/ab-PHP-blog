@@ -1,6 +1,8 @@
 <?php 
-session_start();
 require_once("db.php");
+require_once("functions.php");
+
+$user_data = check_login($con);
 ?>
 
 <!DOCTYPE html>
@@ -29,8 +31,25 @@ require_once("db.php");
                 </div>
             </div>
             <div id="login">
-                <a href="login.php">Login</a>
-                <a href="signUp.php"><button>Sign Up</button></a>
+                <?php 
+                    if($user_data){
+                        $name = $user_data["name"];
+                        if($user_data["admin"] == 1){
+                            echo '
+                            <button class="adminButton"><a href="admin.php">Panel</a></button>
+                            ';
+                        }
+                        echo '
+                            <p></p>
+                            <a href="logout.php"><button>Log Out</button></a>';
+                    } else {
+                        echo '
+                        <a href="login.php">Login</a>
+                        <a href="signUp.php"><button>Sign Up</button></a>';
+                    }
+                ?>
+
+                
             </div>
         </section>
         

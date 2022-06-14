@@ -1,9 +1,11 @@
 <?php
-try{
-    //$db = new PDO('mysql:host=localhost;dbname=blog;charset=UTF8','root','');
-} catch(PDOException $error) {
-    echo "couldnt connect to database";
-    echo "<br>";
-    die($error);
+
+$dbhost = "localhost";
+$dbuser = "root";
+$dbpassword = "";
+$dbname = "blog";
+
+if(!$con = mysqli_connect($dbhost, $dbuser, $dbpassword, $dbname)){
+    die("failed to connect");
 }
 ?>
