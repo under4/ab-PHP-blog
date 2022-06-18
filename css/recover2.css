@@ -1,0 +1,45 @@
+.recover2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+    flex-shrink: 0;
+    flex-grow: 1;
+    height: calc(100vh - 170px);
+}
+
+#main{
+    width: 100%;
+}
+
+.recover2 p {
+    font-size: 1.2rem;
+}
+
+.recover2{
+    position: relative;
+} 
+
+.recover2 input {
+    font-size: 1.2rem;
+    margin: 3px 0;
+    padding: 3px;
+}
+
+.recover2 input[type="submit"] {
+    font-size: 1rem;
+    border: 3px solid black;
+    width: 15ch;
+    padding: 5px;
+    margin: 5px 0;
+    align-self: center;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.recover2 #warning {
+    font-size: 1rem;
+    position: absolute;
+    top: 100%;
+}

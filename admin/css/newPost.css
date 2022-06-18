@@ -1,0 +1,31 @@
+.newPostContainer{
+    display: flex;
+    padding: 12px;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.newPostContainer form{
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    flex-grow: 1;
+}
+
+.newPostContainer form span{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12px;
+}
+
+.newPostContainer form input{
+    padding: 5px;
+}
+
+.newPostContainer form #title{
+    font-size: 1.3rem;
+}
+
+.newPostContainer input[type="submit"]{
+    cursor: pointer;
+}

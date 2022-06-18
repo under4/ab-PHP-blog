@@ -17,6 +17,17 @@ $user_data = check_login($con);
     
 
     <body>
+        <div id="promptContainer">
+            <div id="prompt" class="promptHidden">
+                <h3>Delete Post</h3>
+                <p>Are you sure you want to delete this post?</p>
+                <div>
+                    <button id="accept">Accept</button>
+                    <button id="decline">Decline</button>
+                </div>
+            </div>
+        </div>
+        
         <section id="header">
             <div>
                 <a href="index.php">
@@ -30,17 +41,19 @@ $user_data = check_login($con);
                     <a href="about.php">About</a>
                 </div>
             </div>
+            <?php 
+                
+            ?>
             <div id="login">
                 <?php 
                     if($user_data){
-                        $name = $user_data["name"];
-                        if($user_data["admin"] == 1){
+                        echo '<p>' .$user_data["name"].'</p>';
+                        if($user_data && $user_data["admin"] == 1){
                             echo '
-                            <button class="adminButton"><a href="admin.php">Panel</a></button>
+                                <a href="admin/posts.php"><button>Panel</button></a>
                             ';
                         }
                         echo '
-                            <p></p>
                             <a href="logout.php"><button>Log Out</button></a>';
                     } else {
                         echo '

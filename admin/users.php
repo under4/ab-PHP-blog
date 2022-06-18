@@ -1,5 +1,6 @@
 <?php 
-require_once("header.php")
+require_once("header.php");
+require_once("../functions.php");
 ?>
 <!DOCTYPE html>
 <html>
@@ -9,19 +10,11 @@ require_once("header.php")
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/19a4fd8ab0.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/root.css">
-        <link rel="stylesheet" href="css/recover1.css">
     </head>
     <body>
         <div class="flex">
-            
+            <?php require_once("side.php") ?>
             <div id="main">
-                <form class="recover1" method="POST">
-                    <p>What is your username?</p>
-                    <input type="text" placeholder="Username">
-                    <input type="submit" value="Submit">
-                    <p id="warning"></p>
-                </form>
-
             </div>
         </div>
     </body>

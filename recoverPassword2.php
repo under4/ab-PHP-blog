@@ -9,16 +9,17 @@ require_once("header.php")
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://kit.fontawesome.com/19a4fd8ab0.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="css/root.css">
-        <link rel="stylesheet" href="css/recover1.css">
+        <link rel="stylesheet" href="css/recover2.css">
     </head>
     <body>
         <div class="flex">
             
             <div id="main">
-                <form class="recover1" method="POST">
-                    <p>What is your username?</p>
-                    <input type="text" placeholder="Username">
-                    <input type="submit" value="Submit">
+                <form class="recover2" method="POST">
+                    <p>Security Question</p>
+                    <input type="text" placeholder="Answer" name="answer" id="answer">
+                    <input type="password" placeholder="New Password" name="newPassword" id="newPassword">
+                    <input type="submit" value="Change Password">
                     <p id="warning"></p>
                 </form>
 
