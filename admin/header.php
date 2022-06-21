@@ -19,7 +19,7 @@ if($user_data && $user_data["admin"]==0){
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="../css/root.css">
         <link rel="stylesheet" href="../css/header.css">
-        <script src="//cdn.ckeditor.com/4.18.0/full/ckeditor.js"></script>
+        <script src="https://cdn.ckeditor.com/ckeditor5/34.1.0/classic/ckeditor.js"></script>
     </head>
     
 

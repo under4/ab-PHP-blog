@@ -12,9 +12,6 @@
             <a href="newPost.php">New Post</a>
             <a href="posts.php">Posts</a>
             <a href="categories.php">Categories</a>
-            <a href="users.php">Users</a>
-            <a href="comments.php">Comments</a>
-
         </section>
         
     </body>

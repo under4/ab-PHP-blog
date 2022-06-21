@@ -12,11 +12,21 @@ require_once("header.php")
         <link rel="stylesheet" href="css/recover2.css">
     </head>
     <body>
+        <?php 
+            parse_str($_SERVER['QUERY_STRING'], $output);
+            $query = "SELECT * FROM users WHERE user_id='".$output["user"]."'";
+            $result = mysqli_query($con, $query);
+            $dataAll = $result -> fetch_all();
+            $user = $dataAll[0];
+
+            $recoveryQuestions = array('What is the name of your first pet?', "What is your mother's maiden name?", 'What is the name of the town where you were born?');
+            $userQuestion = $recoveryQuestions[$user[6]-1];
+        ?>
         <div class="flex">
             
             <div id="main">
                 <form class="recover2" method="POST">
-                    <p>Security Question</p>
+                    <p><?php echo $userQuestion ?></p>
                     <input type="text" placeholder="Answer" name="answer" id="answer">
                     <input type="password" placeholder="New Password" name="newPassword" id="newPassword">
                     <input type="submit" value="Change Password">
@@ -25,5 +35,16 @@ require_once("header.php")
 
             </div>
         </div>
+        <?php
+            if($_POST){
+                if($_POST["answer"] == $user[7]){
+                    $newPass = $_POST["newPassword"];
+                    $user_id = $output["user"];
+                    $query = "UPDATE users SET password='".$newPass."' WHERE user_id='".$user_id."'";
+                    mysqli_query($con, $query);
+                    header("Location: login.php");
+                }
+            }
+        ?>
     </body>
 </html>

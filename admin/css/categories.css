@@ -1,3 +1,49 @@
 .categoriesContainer{
     padding: 12px;
 }
+
+input{
+    font-size: 1rem;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+input[type = "submit"]{
+    background-color: white;
+    cursor: pointer;
+}
+
+#adminCategories{
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+#adminCategories .category{
+    display: flex;
+    justify-content: space-between;
+}
+
+#adminCategories .category .categoryInfo{
+    font-size: 1.2rem;
+    display: flex;
+    color: black;
+}
+
+#adminCategories .category .categoryInfo h3:first-of-type{
+    margin-right: 8px;
+    text-transform: capitalize;
+}
+
+.categoriesContainer button{
+    background-color: white;
+    font-size: 1rem;
+    padding: 3px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.categoriesContainer button:hover,input[type="submit"]:hover{
+    background-color: rgb(209, 209, 209);
+}

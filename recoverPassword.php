@@ -17,12 +17,27 @@ require_once("header.php")
             <div id="main">
                 <form class="recover1" method="POST">
                     <p>What is your username?</p>
-                    <input type="text" placeholder="Username">
+                    <input require name="username" type="text" placeholder="Username">
                     <input type="submit" value="Submit">
                     <p id="warning"></p>
                 </form>
 
             </div>
         </div>
+        <?php 
+            if($_POST){
+                $username = $_POST["username"];
+                $query = "SELECT * FROM users WHERE user_name = '".$username."'";
+                $result = mysqli_query($con, $query);
+                $data = $result -> fetch_all();
+                
+                if(count($data) == 0){
+                    echo '<p>No user by that name</p>';
+                } else {
+                    header("Location: recoverPassword2.php?user=". $data[0][1]);
+                }
+
+            }
+        ?>
     </body>
 </html>

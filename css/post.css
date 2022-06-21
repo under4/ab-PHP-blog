@@ -24,11 +24,20 @@
     font-weight: 600;
 }
 
+#post #newComment input {
+    cursor: pointer;
+    border-radius: 3px;
+}
+
 #post textarea{
     resize: none;
     font-size: 1rem;
     padding: 5px;
     width: 100%;
+}
+
+#post .comment{
+    margin: 10px 0;
 }
 
 #post .comment .commentUpper{
@@ -51,9 +60,15 @@
     font-size: 1rem;
 }
 
+
 #post .comment .commentButtons span{
     margin-right: 5px;
     cursor: pointer;
     font-size: .7rem;
     opacity: .8;
+}
+
+#loginPrompt{
+    font-size: 1.4rem;
+    font-weight: 700;
 }

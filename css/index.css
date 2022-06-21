@@ -65,6 +65,7 @@
     border: 1px solid rgba(0, 0, 0, 0.363);
     border-radius: 4px;
     cursor: pointer;
+    margin: 15px 0;
 }
 
 #main .post img{

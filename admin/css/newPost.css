@@ -29,3 +29,45 @@
 .newPostContainer input[type="submit"]{
     cursor: pointer;
 }
+
+.newPostContainer select{
+    font-size: 1.1rem;
+}
+
+#thumbLabel{
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.newPostContainer input[type="submit"]{
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 3px;
+}
+
+.newPostContainer select, .newPostContainer select option{
+    text-transform: capitalize;
+}
+
+.newPostContainer textarea{
+    resize: none;
+    padding: 5px;
+}
+
+#thumbnailEditContainer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+#thumbnailEditContainer > div{
+    margin-left: 10px;
+    display: flex;
+    align-items: center;
+    
+}
+
+#thumbnailEditContainer > div input{
+    margin-left: 4px;
+    cursor: pointer;
+}

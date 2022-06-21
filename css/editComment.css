@@ -1,0 +1,25 @@
+.editCommentCont form{
+    display: flex;
+    flex-direction: column;
+}
+
+.editCommentCont form textarea{
+    resize: none;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 500;
+    width: 100%;
+}
+
+.editCommentCont form input{
+    width: 30%;
+    padding: 5px;
+    background-color: white;
+    border-radius: 3px;
+    
+}
+
+.editCommentCont form > *{
+    margin-top: 6px;
+
+}

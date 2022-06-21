@@ -9,24 +9,25 @@
         <link rel="stylesheet" href="css/side.css">
     </head>
     <body>
+        <?php 
+            $post_info = returnPosts($con);
+        ?>
         <div id="sideContainer">
-            <section id="search">
-                <form>
-                    <input type="text" placeholder="Search For Posts">
-                    <input type="submit" value="Search">
-                </form>
-            </section>
             <section id="categories">
                 <div>
-                    <h3>Top Categories</h3>
-                    <a href="categories.php">See All</a>
+                    <h3>Categories</h3>
                 </div>
                 <ul>
-                    <li><a href=""><span class="category">CategoryName</span><span class="numOfPostsInCategory">5</span></a></li>
-                    <li><a href=""><span class="category">CategoryName</span><span class="numOfPostsInCategory">5</span></a></li>
-                    <li><a href=""><span class="category">CategoryName</span><span class="numOfPostsInCategory">5</span></a></li>
-                    <li><a href=""><span class="category">CategoryName</span><span class="numOfPostsInCategory">5</span></a></li>
-                    <li><a href=""><span class="category">CategoryName</span><span class="numOfPostsInCategory">5</span></a></li>
+                    <?php 
+                        $categories = returnCategories($con);
+                        foreach ($categories as $row) {
+                            $count = count(explode(",",$row[1]));
+                            if($count == 1 && explode(",",$row[1])[0] == ""){
+                                $count = 0;
+                            }
+                            echo '<li><a href="posts.php?category='.$row[0].'"><span class="category">'.$row[0].'</span><span class="numOfPostsInCategory">'.$count.'</span></a></li>';
+                        }
+                    ?>
                 </ul>
             </section>
             <section id="socialLinks">

@@ -1,0 +1,22 @@
+.deletePrompt{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.deletePrompt .deleteButtons{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.deletePrompt .deleteButtons button{
+    background-color: white;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin: 0 5px;
+    font-size: 1.2rem;
+    font-weight: 700;
+}

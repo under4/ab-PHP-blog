@@ -17,17 +17,6 @@ $user_data = check_login($con);
     
 
     <body>
-        <div id="promptContainer">
-            <div id="prompt" class="promptHidden">
-                <h3>Delete Post</h3>
-                <p>Are you sure you want to delete this post?</p>
-                <div>
-                    <button id="accept">Accept</button>
-                    <button id="decline">Decline</button>
-                </div>
-            </div>
-        </div>
-        
         <section id="header">
             <div>
                 <a href="index.php">
@@ -37,8 +26,6 @@ $user_data = check_login($con);
                 <div id="links">
                     <a href="index.php">Home</a>
                     <a href="posts.php">Posts</a>
-                    <a href="categories.php">Categories</a>
-                    <a href="about.php">About</a>
                 </div>
             </div>
             <?php 
